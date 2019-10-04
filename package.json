@@ -1,0 +1,59 @@
+{
+  "name": "Oniric",
+  "version": "1.1.0",
+  "description": "onirical",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdiamond/OniricLayer.git"
+  },
+  "main": "dist/build/app.js",
+  "bin": "dist/build/app.js",
+  "pkg": {
+    "scripts": [
+      "dist/build/app.js",
+      "dist/build/lib/*.js"
+    ],
+    "assets": [
+      "dist/build/web/**",
+      "dist/build/config.json"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^12.7.5",
+    "bcrypt": "^3.0.6",
+    "ws": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.5",
+    "@types/gulp-typescript": "^2.13.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^5.0.0",
+    "nodemon": "^1.19.2",
+    "pkg": "^4.4.0",
+    "pm2": "^3.5.1",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "test": "nodemon dist/build/app.js",
+    "compile": "pkg . --output dist/build/Oniric"
+  },
+  "author": "webdiamond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebDiamond/Oniric/issues"
+  },
+  "homepage": "https://github.com/WebDiamond/Oniric#readme",
+  "keywords": [
+    "webminer",
+    "monero",
+    "cryptonight",
+    "v7",
+    "pool",
+    "javascript",
+    "emscripten",
+    "wasm",
+    "browser",
+    "miner",
+    "blockchain"
+  ]
+}
