@@ -34,8 +34,10 @@
     "typescript": "^3.6.3"
   },
   "scripts": {
-    "test": "nodemon dist/build/app.js",
-    "compile": "pkg . --output dist/build/Oniric"
+    "dev": "nodemon dist/build/app.js",
+    "prod": "pm2 start dist/build/app.js --name Oniric --watch",
+    "compile": "gulp & pkg . --output dist/build/Oniric",
+    "start": "start dist/build/Oniric"
   },
   "author": "webdiamond",
   "license": "MIT",
