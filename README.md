@@ -32,8 +32,8 @@ and replace script parameter with ./dist/build/Oniric with given extension
 
 * Server Deploy
 
-1. copy dist/build content and ecosystem.config.js in a new directory
-2. modify ecosystem.config.js script parameter
+1. copy dist/build/*.js or dist/build/Oniric.*  and ecosystem.config.js in a new directory
+2. modify ecosystem.config.js script parameter and name parameter
 3. run these commands
 ```sh
  npm install -g pm2
