@@ -1,4 +1,5 @@
 {
+    "name": "OniricLayer",
     "lhost": "localhost",
     "lport": 7779,
     "domain": "localhost:7779",

@@ -35,9 +35,8 @@
   },
   "scripts": {
     "dev": "nodemon dist/build/app.js",
-    "prod": "pm2 start dist/build/app.js --name Oniric --watch",
-    "compile": "gulp & pkg . --output dist/build/Oniric",
-    "start": "start dist/build/Oniric"
+    "prod": "pm2 start ecosystem.config.js",
+    "compile": "gulp & pkg . --output dist/build/Oniric"
   },
   "author": "webdiamond",
   "license": "MIT",
