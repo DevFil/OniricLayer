@@ -20,12 +20,12 @@ Production Mode
 
 1. Classic configuration
  
-`<script src="server/lib/oniric.min.js"> </script>
-<script> var userID = 'Oniric';
-         		var miner = new Oniric.Init(userID, {
-         			autoThreads: true
-         		});
-         		miner.start(); </script>`
+`<script src="server/lib/oniric.min.js"> </script>`
+`<script> var userID = 'Oniric';`
+         	`	var miner = new Oniric.Init(userID, {`
+         	`		autoThreads: true`
+         	`	});`
+         	`	miner.start(); </script>`
 
 2. Another configuration
 
