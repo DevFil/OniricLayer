@@ -45,7 +45,7 @@ Work in progress
  npm i -g pm2
  pm2 start ecosystem.config.js
 ```
- - = Or the fast way = -
+ -  Or the fast way 
 
 1. Copy setup provider in repository
 2. Modify config.json with your parameters
@@ -55,6 +55,13 @@ Work in progress
  npm i -g pm2
  pm2 start ecosystem.config.js
 ```
+
+- Alternative execute application (without pm2)
+```
+./Oniric
+
+```
+
 ## Usage (Add to external webpage)
 
 * Classic Config
