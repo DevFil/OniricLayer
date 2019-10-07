@@ -1,6 +1,6 @@
 import {conf} from "../app";
 import {packetStream, poolStream} from "./interfaces";
-const WebSocket = require("ws");
+import * as WebSocket from "ws";
 const net = require("net");
 
 

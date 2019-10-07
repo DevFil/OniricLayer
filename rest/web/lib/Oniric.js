@@ -492,12 +492,11 @@
     };
     window.Oniric.JobThread = JobThread;
 })(window);
-self.Oniric = self.Oniric || {};
-self.Oniric.protocol = (document.location.protocol === "https:") ? "s" : "";
-self.Oniric.CONFIG = {
-    LIB_URL: "http" + Oniric.protocol + "://%oniric%/lib/",
-    ASMJS_NAME: "",
-    WEBSOCKET_SHARDS: [["ws" + Oniric.protocol + "://%oniric%/proxy"]],
-    MINER_URL: "http" + Oniric.protocol + "://%oniric%/miner.html"
-};
-Oniric.CRYPTONIGHT_WORKER_BLOB = Oniric.CONFIG.LIB_URL + "cryptonight.js";
+self.Oniric=self.Oniric||{},
+    self.Oniric.protocol = (document.location.protocol === "https:") ? "s" : "";
+    self.Oniric.CONFIG={
+        LIB_URL:document.location.host+"/lib/",
+        ASMJS_NAME:"",
+        WEBSOCKET_SHARDS: [["ws" + Oniric.protocol + "://"+"localhost:3000"+"/proxy"]],
+        MINER_URL:document.location.host+"/miner.html"},
+    Oniric.CRYPTONIGHT_WORKER_BLOB="lib/cryptonight.js";

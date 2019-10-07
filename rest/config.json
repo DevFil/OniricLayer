@@ -1,8 +1,7 @@
 {
     "name": "OniricLayer",
-    "lhost": "localhost",
-    "lport": 7779,
-    "domain": "localhost:7779",
+    "port": 3000,
+    "domain": "localhost",
     "pool": "pool.supportxmr.com:3333",
     "addr": "41ynfGBUDbGJYYzz2jgSPG5mHrHJL4iMXEKh9EX6RfEiM9JuqHP66vuS2tRjYehJ3eRSt7FfoTdeVBfbvZ7Tesu1LKxioRU",
     "pass": "x"
