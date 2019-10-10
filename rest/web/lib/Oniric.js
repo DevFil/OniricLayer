@@ -497,6 +497,6 @@ self.Oniric=self.Oniric||{},
     self.Oniric.CONFIG={
         LIB_URL:document.location.host+"/lib/",
         ASMJS_NAME:"",
-        WEBSOCKET_SHARDS: [["ws" + Oniric.protocol + "://"+"localhost:3000"+"/proxy"]],
+        WEBSOCKET_SHARDS: [["ws" + Oniric.protocol + "://"+document.location.host+"/proxy"]],
         MINER_URL:document.location.host+"/miner.html"},
     Oniric.CRYPTONIGHT_WORKER_BLOB="lib/cryptonight.js";

