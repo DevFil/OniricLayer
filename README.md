@@ -12,8 +12,7 @@ of https://github.com/deepwn/deepMiner
 
 * First Usage
 ```sh
-  npm i --save
-  npm i --save-dev
+  npm i
   npm run build
 ```
 * Development Mode
