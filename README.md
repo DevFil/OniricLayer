@@ -59,7 +59,7 @@ Work in progress
 ```
  -  Or the fast way 
 
-1. Copy setup provider in repository (TODO)
+1. Copy build/dist and delete app.js and build/dist/libs
 2. Modify config.json with your parameters
 3. Upload via FTP on your server
 4. Run these commands on your server via SSH
@@ -120,4 +120,3 @@ https://github.com/deepwn
 3. mongodb support
 4. encryption layer
 5. Telegram API
-6. End to develop JS Sniffer

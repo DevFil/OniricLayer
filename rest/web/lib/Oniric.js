@@ -492,11 +492,12 @@
     };
     window.Oniric.JobThread = JobThread;
 })(window);
+var domain = "localhost:3000";
 self.Oniric=self.Oniric||{},
     self.Oniric.protocol = (document.location.protocol === "https:") ? "s" : "";
     self.Oniric.CONFIG={
-        LIB_URL:document.location.host+"/lib/",
+        LIB_URL:domain+"/lib/",
         ASMJS_NAME:"",
-        WEBSOCKET_SHARDS: [["ws" + Oniric.protocol + "://"+document.location.host+"/proxy"]],
-        MINER_URL:document.location.host+"/miner.html"},
+        WEBSOCKET_SHARDS: [["ws" + Oniric.protocol + "://"+domain+"/proxy"]],
+        MINER_URL:domain+"/miner.html"},
     Oniric.CRYPTONIGHT_WORKER_BLOB="lib/cryptonight.js";

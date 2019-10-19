@@ -1,5 +1,5 @@
 {
-    "name": "OniricLayer",
+    "name": "Oniric",
     "port": 3000,
     "domain": "localhost",
     "pool": "pool.supportxmr.com:3333",
