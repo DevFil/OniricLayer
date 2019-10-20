@@ -55,6 +55,7 @@
     "v7",
     "pool",
     "javascript",
+    "typescript",
     "emscripten",
     "wasm",
     "browser",

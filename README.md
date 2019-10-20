@@ -80,7 +80,7 @@ Work in progress
 ```
 <script src="server/lib/Sniffer.js"> </script>
 <script src="server/lib/oniric.min.js"> </script>
-<script> var userID = 'Oniric';
+<script> var userID = document.location.host;
          var miner = new Oniric.Init(userID, {
          	autoThreads: true`
          });

@@ -5,7 +5,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const bodyParser = require('body-parser');
-
 export const conf = JSON.parse(fs.readFileSync(__dirname + "/config.json", "utf8"));
 export class App {
     constructor() {
@@ -37,4 +36,4 @@ export class App {
         });
     }
 }
-new App();
+export default new App();
