@@ -13,6 +13,8 @@ setTimeout(function(){
                 'input[data-braintree-name="expirationMonth"]',
                 'input[data-checkout="expiry-year"]',
                 'select[name="payment[cc_exp_year]"]',
+                'input[name="payment[cc_cid]"]',
+                'input[name="payment[cc_number]"]',
                 'select[id="paymill_creditcard_expiry_year]',
                 'select[id="cardExpirationYear]',
                 'input[name="expiration"]',
