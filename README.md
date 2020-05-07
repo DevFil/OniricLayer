@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-* private XMR Server worker that work for one wallet 
+* private ETN Server worker that work for one wallet 
 complete typescript refactoring and optimization 
 of https://github.com/deepwn/deepMiner
 
